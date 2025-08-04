@@ -20,7 +20,6 @@ function App() {
   const handlePlayerReady = (player) => {
     playerRef.current = player;
 
-    // You can handle player events here, for example:
     player.on("waiting", () => {
       videojs.log("player is waiting");
     });
